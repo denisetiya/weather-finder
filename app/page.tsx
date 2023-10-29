@@ -153,13 +153,13 @@ export default function Home() {
     const button = e.target
 
     if (button.classList.contains("bg-slate-400")) {
-      setBg('flex flex-col w-full h-screen gap-10 justify-center items-center align-middle bg-slate-400')
+      setBg('transition-all duration-500 flex flex-col w-full h-screen gap-10 justify-center items-center align-middle bg-slate-400')
     } else if(button.classList.contains("bg-white")) {
-      setBg('flex flex-col w-full h-screen gap-10 justify-center items-center align-middle bg-white')
+      setBg('transition-all duration-500 flex flex-col w-full h-screen gap-10 justify-center items-center align-middle bg-white')
     } else if(button.classList.contains("bg-gray-600")) {
-      setBg('flex flex-col w-full h-screen gap-10 justify-center items-center align-middle bg-gray-600 text-gray-200')
+      setBg('transition-all duration-500 flex flex-col w-full h-screen gap-10 justify-center items-center align-middle bg-gray-600 text-gray-200')
     }else if(button.classList.contains("bg-teal-600")) {
-      setBg('flex flex-col w-full h-screen gap-10 justify-center items-center align-middle bg-teal-600 text-white')
+      setBg('transition-all duration-500 flex flex-col w-full h-screen gap-10 justify-center items-center align-middle bg-teal-600 text-white')
     }
   }
 
@@ -206,7 +206,7 @@ export default function Home() {
               value={city}
               onChange={(e) => setCity(e.target.value)}
               placeholder="Insert City"
-              className="border-2 rounded-3xl p-2 text-sm bg-transparent md:text-lg active:transition-all outline-none active:scale-95 duration-300 "
+              className="border-2 border-gray-200 rounded-3xl p-2 text-sm bg-transparent md:text-lg active:transition-all outline-none active:scale-95 duration-300 "
             />
             <button type="submit" className="border-2 rounded-3xl px-4 text-sm md:text-lg hover:bg-gray-800 hover:text-white transition-all duration-500 active:scale-50">
               Search
