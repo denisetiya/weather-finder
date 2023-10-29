@@ -294,7 +294,8 @@ export default function Home() {
           </div>
         ) : (
           <div>
-            <p>Loading...</p>
+            <p>Permission Location denied</p>
+            <p>open in Chrome</p>
           </div>
         )}
       </motion.div>
