@@ -206,7 +206,7 @@ export default function Home() {
               value={city}
               onChange={(e) => setCity(e.target.value)}
               placeholder="Insert City"
-              className="border-2 rounded-3xl p-2 text-sm md:text-lg active:transition-all outline-none active:scale-95 duration-300 "
+              className="border-2 rounded-3xl p-2 text-sm bg-transparent md:text-lg active:transition-all outline-none active:scale-95 duration-300 "
             />
             <button type="submit" className="border-2 rounded-3xl px-4 text-sm md:text-lg hover:bg-gray-800 hover:text-white transition-all duration-500 active:scale-50">
               Search
