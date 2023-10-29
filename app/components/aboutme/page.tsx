@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { InstagramLogo, GithubLogo} from '@phosphor-icons/react'
 import Link from 'next/link'
