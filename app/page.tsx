@@ -312,7 +312,14 @@ export default function Home() {
         <motion.button drag onClick={handleTheme} className="w-7 h-7 sm:w-10 sm:h-10  rounded-full bg-gray-600 border-2 border-gray-400"></motion.button>
         <motion.button drag onClick={handleTheme} className="w-7 h-7 sm:w-10 sm:h-10  rounded-full bg-teal-600 border-2 border-gray-400" ></motion.button>
       </motion.div>
-      <div className="text-[9px]">Tap color to change theme</div>
+      <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 3,
+        delay:1.5
+      }}
+      className="text-[9px]">Tap color to change theme</motion.div>
       <About/>
     </div>
   )
